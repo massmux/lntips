@@ -3,5 +3,5 @@
 Readymade image from dockerhub
 
 ```
-git pull massmux/lightningtipbot:0.5.1
+docker pull massmux/lightningtipbot:0.5.1
 ```
