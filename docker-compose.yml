@@ -1,0 +1,15 @@
+version: "3.7"  
+  
+services:  
+ bot:  
+   image: massmux/lightningtipbot:0.5.1
+   restart: on-failure  
+   stop_grace_period: 1m  
+   working_dir: /opt/LightningTipBot
+   entrypoint: /opt/LightningTipBot/LightningTipBot
+   volumes:
+     - ${PWD}/config.yaml:/opt/LightningTipBot/config.yaml
+     - ${PWD}/data:/opt/LightningTipBot/data
+
+
+  
