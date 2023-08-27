@@ -10,6 +10,10 @@ services:
    volumes:
      - ${PWD}/config.yaml:/opt/LightningTipBot/config.yaml
      - ${PWD}/data:/opt/LightningTipBot/data
+   ports:
+     - "6060:6060"
+     - "5454:5454"
+     - "5588:5588"
 
 
   
